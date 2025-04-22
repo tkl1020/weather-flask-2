@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Weather Lookup</title>
+</head>
+<body>
+  <h1>Check the Weather</h1>
+  <form method="post">
+    <input name="city" placeholder="City name" required>
+    <button type="submit">Go</button>
+  </form>
+
+  {% if weather %}
+    <h2>Weather in {{ weather.city }}, {{ weather.country }}:</h2>
+    <p>Temp: {{ weather.temp }}°C</p>
+    <p>Description: {{ weather.desc }}</p>
+    <p>Humidity: {{ weather.hum }}%</p>
+    <p>Wind: {{ weather.wind }} m/s</p>
+  {% elif error %}
+    <p style="color:red">{{ error }}</p>
+  {% endif %}
+</body>
+</html>
