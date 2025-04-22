@@ -68,4 +68,4 @@ jobs:
         with:
           app-name: 'weather-flask-2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8EDAC15111D54C958DEA3BABA9AB827F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DDCA3FBD0A104C63BAA9DADA56072BCB }}
